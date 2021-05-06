@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ForgotFrag"
+    android:background="@color/white"
+    android:id="@+id/forgotFrag">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Reset Password"
+               android:textColor="@color/black"
+               android:textAlignment="center"
+               android:textSize="30dp"
+               android:layout_marginTop="100dp"
+               android:fontFamily="sans-serif-condensed-medium"/>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="80dp"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               android:id="@+id/User_Email"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:textColorHint="@color/gray"
+               app:boxStrokeColor="@color/blue"
+               app:boxCornerRadiusBottomEnd="5dp"
+               app:boxCornerRadiusBottomStart="5dp"
+               app:boxCornerRadiusTopEnd="5dp"
+               app:boxCornerRadiusTopStart="5dp">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textEmailAddress"
+                   android:hint="Email"
+                   android:textColorHint="@color/blue"
+                   android:textColor="@color/black"/>
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:id="@+id/Confirm_Btn"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               android:textSize="18dp"
+               android:text="Confirm"
+               android:textColor="@color/white"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/backToLogin"
+               android:text="Back To Login"
+               android:textColor="@color/blue"
+               android:textAlignment="center"
+               android:textSize="16dp"
+               android:layout_marginTop="30dp"/>
+
+       </LinearLayout>
+   </ScrollView>
+</FrameLayout>

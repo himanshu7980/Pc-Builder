@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/DisplayDesign"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp"
+    android:elevation="5dp"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_cream">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/prod_img"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_launcher_foreground"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prod_name"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_toEndOf="@+id/prod_img"
+            android:layout_marginTop="10dp"
+            android:text="Product Name"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prod_name"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/prod_img"
+            android:text="₹ "
+            android:textSize="16dp"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/prod_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prod_name"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/txt_price"
+            android:text="0000"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
